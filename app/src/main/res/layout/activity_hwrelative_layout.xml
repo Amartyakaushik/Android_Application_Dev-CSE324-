@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout"
+    android:background="@drawable/bg_background_auth">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/icon"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:src="@drawable/hospitallogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image"
+        android:layout_width="230dp"
+        android:layout_height="220dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/hospital"
+        android:layout_alignTop="@+id/icon"
+        android:layout_marginTop="78dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to the emergency room when you or someone you know has a serious medical condition that requires immediate attention, such as:
+
+Chest pain
+
+Unconsciousness
+
+Weakness in an arm or leg, or drooping face
+
+Breathlessness
+
+Bleeding that doesn't stop after 10 minutes"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="9dp"
+        android:layout_alignStart="@+id/image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/consent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For your personal consent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#233BE4"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Submit"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

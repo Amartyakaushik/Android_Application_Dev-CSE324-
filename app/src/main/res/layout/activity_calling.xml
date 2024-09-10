@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeWork.callingActivity"
+    android:background="#07ECE4E4">
+
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+      android:id="@+id/avt01"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+    android:src="@drawable/avt01"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginTop="50dp"/>
+
+  <TextView
+      android:id="@+id/ringing"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:text="Ringing..."
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/avt01"
+    app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="5dp"/>
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Sukhii"
+      android:textSize="28sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/ringing"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="8dp"/>
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:id="@+id/network"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="horizontal"
+      app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/name"
+      android:paddingHorizontal="60dp"
+      android:layout_marginTop="13dp">
+
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:src="@drawable/baseline_network_wifi_24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="Mobile +1"
+      android:textSize="16sp"
+      android:layout_marginStart="5dp"
+      android:textColor="@color/black"/>
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:id="@+id/details"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/network"
+      android:layout_marginTop="40dp"
+      android:orientation="horizontal"
+      android:gravity="center_horizontal">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/mute"
+        android:layout_marginEnd="70dp"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/baseline_dialpad_24"
+        android:layout_marginEnd="70dp"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/call_speaker"/>
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:id="@+id/call_add"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@+id/details"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginTop="46dp"
+
+      android:orientation="horizontal">
+
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+      android:id="@+id/kkk"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+    android:src="@drawable/baseline_add_ic_call_24"
+    android:layout_marginStart="46dp"/>
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_marginStart="70dp"
+    android:src="@drawable/vc"/>
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+  <androidx.constraintlayout.utils.widget.ImageFilterView
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+    android:src="@drawable/call_cut_ic"
+      app:layout_constraintTop_toBottomOf="@id/call_add"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="60dp"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>

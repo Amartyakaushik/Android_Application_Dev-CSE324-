@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeWork.DialerActivity"
+    android:backgroundTint="#20000000"
+    android:background="@drawable/bg_background_auth">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#456C6464"
+        android:paddingHorizontal="5dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="4dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:text="RECENT"
+            android:textColor="@color/black"
+            android:background="@drawable/bgbg"
+            android:layout_marginEnd="12dp"/>
+        <Button
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:text="CONTACTS"
+            android:textColor="@color/black"
+            android:background="@drawable/bgbg"
+            android:layout_marginEnd="12dp"/>
+        <Button
+            android:layout_width="123dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bgbg"
+            android:text="FAVOURITE"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:padding="3dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/logs"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="9dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+            android:textSize="16sp"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/incomingcall"
+            android:layout_marginStart="70dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>    <androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/log1"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="9dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+        android:textSize="16sp"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/outgoingcall"
+        android:layout_marginStart="70dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/log2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:padding="9dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+            android:textSize="16sp"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/incomingcall"
+            android:layout_marginStart="70dp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/log3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:padding="9dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+                android:textSize="16sp"/>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/incomingcall"
+                android:layout_marginStart="70dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/log4"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="9dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+        android:textSize="16sp"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/outgoingcall"
+        android:layout_marginStart="70dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/log5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:padding="9dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+                android:textSize="16sp"/>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/incomingcall"
+                android:layout_marginStart="70dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/log6"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:padding="9dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JR. DEIGO \n Just now outgoing 13 sec before"
+                android:textSize="16sp"/>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/incomingcall"
+                android:layout_marginStart="70dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

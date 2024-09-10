@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayout"
+    android:background="@drawable/global_warming_bckg"
+    android:backgroundTintMode="src_atop">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/global_warming_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/glb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Global Warming"
+        android:textSize="26sp"
+        android:textColor="#EAB700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/details"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="172dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glb"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:background="#48FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:textColorHighlight="@color/black"
+        android:text="@string/global_warming_detail"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:padding="1dp"/>
+
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/map_detls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Map"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginEnd="100dp"/>
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/contact_us"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Contact Us"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginEnd="100dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp"
+        android:padding="3dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ig"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/instagram"
+            android:layout_marginStart="10dp"/>
+<!--            android:layout_marginVertical="5dp"-->
+
+        <ImageButton
+            android:id="@+id/fb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/facebook"
+            android:layout_marginStart="10dp"/>
+<!--            android:layout_marginVertical="5dp"-->
+
+        <ImageButton
+            android:id="@+id/lnk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/linkedin"
+            android:layout_marginStart="10dp"/>
+<!--            android:layout_marginVertical="5dp"-->
+        <ImageButton
+            android:id="@+id/wa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/whatsapp"
+            android:layout_marginStart="10dp"/>
+<!--            android:layout_marginVertical="5dp"-->
+        <ImageButton
+            android:id="@+id/phone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/phone"
+            android:layout_marginStart="10dp"/>
+<!--            android:layout_marginVertical="5dp"-->
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
