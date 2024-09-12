@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeWork.DialerPad"
+    android:background="@drawable/bg_dialer_pad">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+918538946343"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignStart="@id/number"
+        android:layout_alignEnd="@id/number"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="113dp"
+        android:text="Add Number"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/bg_shape_dialer_btn"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/bg_shape_dialer_btn"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/bg_shape_dialer_btn"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
