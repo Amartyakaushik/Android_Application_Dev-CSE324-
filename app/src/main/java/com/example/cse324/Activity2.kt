@@ -28,8 +28,11 @@ class Activity2 : AppCompatActivity() {
         var data : EditText = findViewById(R.id.useName)
         loginBtn.setOnClickListener {
         val  str = data.text.toString()
-        val intent = Intent(this,HWRelativeLayout::class.java)
-            intent.putExtra("myUserName",str)
+            val intent = Intent(this,HWRelativeLayout::class.java)
+            startActivity(intent)
+//        val intent = Intent(this,HWRelativeLayout::class.java)
+//            intent.putExtra("myUserName",str)
+
             startActivity(intent)
 
         var receive_data : TextView = findViewById(R.id.receive_data)

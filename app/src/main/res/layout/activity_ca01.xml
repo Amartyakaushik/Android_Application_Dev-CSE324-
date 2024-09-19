@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_background_auth"
+    tools:context=".CA01">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:background="@drawable/lpu_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="23dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/keylogo"
+            android:layout_marginEnd="20dp"/>
+
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:hint="User Id"
+            android:textSize="22sp"
+            android:textColorHint="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/singInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sign In ->"
+        android:textSize="23sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="#C39459"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:color/transparent"
+        android:text="Forgot Password ?"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/receiver"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
