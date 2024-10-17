@@ -49,4 +49,15 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+
+    //Lotties Animation
+    implementation ("com.airbnb.android:lottie:6.5.2")
+    // gif animation
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.29")
+
+    // fancy Toast
+    implementation ("io.github.shashank02051997:FancyToast:2.0.2")
+
+    // custom toast
+    implementation ("com.github.emreesen27:Android-Custom-Toast-Message:1.0.5")
 }

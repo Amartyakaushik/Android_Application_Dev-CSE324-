@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mail"
+        android:icon="@drawable/ic_brain"
+        android:title="mail" />
+    <item android:id="@+id/upload"
+        android:icon="@drawable/ic_email"
+        android:title="upload" />
+    <!--    android:showAse"
+        android:icon="@drawable/ic_Action="always"-->
+    <item android:id="@+id/sharshare"
+        android:title="share"
+        android:icon="@drawable/ic_share"/>
+
+</menu>

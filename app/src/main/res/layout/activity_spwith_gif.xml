@@ -4,15 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sample">
+    tools:context=".SplashScreen.spwithGif">
 
-<!--    <Linea-->
-    <Button
-        android:id="@+id/btn"
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="hello"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash_gif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+<!--        android:background="@drawable/bg_anim"-->
+<!--    // Loop indefinitely&ndash;&gt;-->
+<!--    // Start playing as soon as the animation is loaded-->
+<!--    // or-->
+<!--    app:lottie_fileName="hello_world.json"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

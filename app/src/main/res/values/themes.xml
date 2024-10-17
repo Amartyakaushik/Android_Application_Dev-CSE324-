@@ -1,13 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.CSE324" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--    <style name="Base.Theme.CSE324." parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
     </style>
 
-    <style name="Theme.CSE324" parent="Base.Theme.CSE324" />
+<!--    <style name="Theme.CSE324" parent="Base.Theme.CSE324" />-->
 
-    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+<!--    <style name="Theme.CSE324" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorControlNormal">#fff</item>   <!-- normal border color change as you wish -->
         <item name="colorControlActivated">#fff</item> <!-- activated color change as you wish -->
         <item name="android:textColor">#fff</item> <!-- checkbox text color -->

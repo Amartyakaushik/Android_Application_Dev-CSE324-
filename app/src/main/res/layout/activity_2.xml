@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Activity2"
     android:orientation="vertical"
-    android:background="@drawable/bg_background_auth">
+    android:background="@drawable/bg_background_auth"
+    android:id="@+id/main">
 
     <ImageView
         android:layout_width="match_parent"
@@ -86,6 +87,15 @@
             android:textSize="18dp"
             android:textColor="#0D71AC"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/SnackBarBtn"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="SnackBar"
+        android:textSize="26dp"
+        />
 
     <TextView
         android:id="@+id/receive_data"
