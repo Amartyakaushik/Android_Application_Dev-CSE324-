@@ -29,4 +29,40 @@
     app:layout_constraintEnd_toEndOf="parent"
         android:textSize="18sp"
         android:text="Implicit"/>
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="check Box"
+        android:textSize="20sp"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/implicitBtn"
+        app:layout_constraintEnd_toEndOf="@+id/implicitBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/implicitBtn"/>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkTheBox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textIsSelectable="true"
+        android:shadowColor="@color/yellow"
+        android:background="@color/black"
+        android:cursorVisible="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/checkButton"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree to terms and condition"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/checkTheBox"
+        app:layout_constraintTop_toTopOf="@+id/checkTheBox"
+        android:layout_marginStart="8dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

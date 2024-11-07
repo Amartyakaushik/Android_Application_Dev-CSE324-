@@ -15,6 +15,7 @@ class MenubarActivity : AppCompatActivity() {
 
         // calling this activity's function to
         // use ActionBar utility methods
+
         val actionBar = supportActionBar
 
         // providing title for the ActionBar
@@ -22,9 +23,10 @@ class MenubarActivity : AppCompatActivity() {
 
         // providing subtitle for the ActionBar
         actionBar.subtitle = "   Design a custom Action Bar"
+//        actionBar.setBackgroundDrawable(@drawable)
 
         // adding icon in the ActionBar
-        actionBar.setIcon(R.drawable.avt01)
+//        actionBar.setIcon(R.drawable.avt01)
 
         // methods to display the icon in the ActionBar
         actionBar.setDisplayUseLogoEnabled(true)

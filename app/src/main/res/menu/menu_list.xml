@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/mail"
         android:icon="@drawable/ic_brain"
-        android:title="mail" />
+        android:title="mail"
+        app:showAsAction="never">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <item android:id="@+id/call_cut"
+                android:title="@string/calling"
+                android:icon="@drawable/ic_call"
+                app:showAsAction="always" />
+
+            <item android:id="@+id/error"
+                android:title="error"
+                android:icon="@drawable/ic_error"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+
     <item android:id="@+id/upload"
         android:icon="@drawable/ic_email"
-        android:title="upload" />
-    <!--    android:showAse"
-        android:icon="@drawable/ic_Action="always"-->
+        android:title="upload"
+        app:showAsAction="ifRoom"/>
+    <!--    android:showAse"-->
+<!--        android:icon="@drawable/ic_Action="always"-->
     <item android:id="@+id/sharshare"
         android:title="share"
-        android:icon="@drawable/ic_share"/>
+        android:icon="@drawable/ic_share"
+        android:tooltipText="Share"
+        app:showAsAction="ifRoom|withText">
+
+
+
+    </item>
 
 </menu>

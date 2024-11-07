@@ -1,22 +1,40 @@
 package com.example.cse324.Intent
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CheckBox
+import android.widget.Toast
 import com.example.cse324.R
 import com.example.cse324.SnackBar
 
 class IntentActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intent)
 
         val explicitBtn : Button = findViewById(R.id.explicitBtn)
         val implicitBtn : Button = findViewById(R.id.implicitBtn)
+        val checkTheBox : CheckBox = findViewById(R.id.checkTheBox)
 //        val ex : Button = findViewById(R.id.implicitBtn)
 
+//        checkTheBox.setOnCheckedChangeListener { -, isChecked ->
+//
+//        }
+
+        val checkButton : Button = findViewById(R.id.checkButton)
+        checkButton.setOnClickListener {
+            if(checkTheBox.isChecked){
+                Toast.makeText(this, "Checked",Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this,"Please agree to the terms and condition first",Toast.LENGTH_SHORT).show()
+            }
+
+        }
         explicitBtn.setOnClickListener {
             val intent = Intent(this,SnackBar::class.java)
             startActivity(intent)
@@ -44,6 +62,8 @@ class IntentActivity : AppCompatActivity() {
 
             val intent4 = Intent(Intent.ACTION_VIEW, Uri.parse(location))
             startActivity(intent4)
+
+
 
         }
     }
