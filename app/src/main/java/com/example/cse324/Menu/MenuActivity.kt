@@ -1,9 +1,10 @@
-package com.example.cse324
+package com.example.cse324.Menu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.cse324.Class.CustomMenu
+import com.example.cse324.R
 
 class MenuActivity : AppCompatActivity() {
     val customMenu = CustomMenu()

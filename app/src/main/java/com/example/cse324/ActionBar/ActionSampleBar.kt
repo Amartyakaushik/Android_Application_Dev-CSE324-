@@ -11,15 +11,16 @@ import android.widget.Toast
 import com.example.cse324.R
 import com.example.cse324.databinding.ActivityActionSampleBarBinding
 import com.google.android.material.snackbar.Snackbar
-
 class ActionSampleBar : AppCompatActivity() {
-    private lateinit var binding :ActivityActionSampleBarBinding
+    private lateinit var binding : ActivityActionSampleBarBinding
+//    private lateinit var binding :ActivityActionSampleBarBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityActionSampleBarBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val actionBar = supportActionBar
+//        actionBar!!.hide()
         actionBar!!.title = "Hey Divyanshu"
         actionBar.subtitle = "hugly gugly"
 //        actionBar.setIcon(R.drawable.ic_brain)

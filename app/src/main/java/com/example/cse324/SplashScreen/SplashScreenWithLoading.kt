@@ -5,7 +5,7 @@ import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 //import com.example.cse324.MainActivity
-import com.example.cse324.MenubarActivity
+import com.example.cse324.Menu.MenubarActivity
 import com.example.cse324.R
 
 class SplashScreenWithLoading : AppCompatActivity() {
@@ -36,7 +36,7 @@ class SplashScreenWithLoading : AppCompatActivity() {
 
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
-            startActivity(Intent(this@SplashScreenWithLoading,MenubarActivity::class.java))
+            startActivity(Intent(this@SplashScreenWithLoading, MenubarActivity::class.java))
         }
     }
 }

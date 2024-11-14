@@ -1,4 +1,4 @@
-package com.example.cse324
+package com.example.cse324.Menu
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import com.example.cse324.R
 
 class MenubarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +62,7 @@ class MenubarActivity : AppCompatActivity() {
                     R.id.sharshare -> Toast.makeText(this,"Search clicked",Toast.LENGTH_LONG).show()
 
                 }
-                    return super .onOptionsItemSelected(item)
+                    return super.onOptionsItemSelected(item)
 
     }
 }
