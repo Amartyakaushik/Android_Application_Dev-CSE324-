@@ -1,6 +1,5 @@
 package com.example.cse324.Menu
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button

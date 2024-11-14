@@ -13,7 +13,6 @@ import com.example.cse324.databinding.ActivityActionSampleBarBinding
 import com.google.android.material.snackbar.Snackbar
 class ActionSampleBar : AppCompatActivity() {
     private lateinit var binding : ActivityActionSampleBarBinding
-//    private lateinit var binding :ActivityActionSampleBarBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityActionSampleBarBinding.inflate(layoutInflater)
