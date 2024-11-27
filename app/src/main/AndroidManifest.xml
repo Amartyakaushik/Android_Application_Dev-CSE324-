@@ -19,21 +19,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/MyCheckBox"
         android:supportsRtl="true"
+        android:theme="@style/MyCheckBox"
         tools:targetApi="31">
-<!--        android:theme="@style/Base.Theme.CSE324"-->
+        <activity
+            android:name=".sampleActivity"
+            android:exported="false" />
+        <!-- android:theme="@style/Base.Theme.CSE324" -->
         <activity
             android:name=".Menu.PopUpMenu"
             android:exported="false" />
         <activity
             android:name=".Menu.ContextMenu"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".PermissionsActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".NavSample"
             android:exported="true" />
@@ -51,14 +52,7 @@
             android:exported="true" />
         <activity
             android:name=".ActionBar.ActionSampleBar"
-            android:exported="true" >
-
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true">
         </activity>
         <activity
             android:name=".RecyclerView"
@@ -68,13 +62,17 @@
             android:exported="true" />
         <activity
             android:name=".Menu.MenuActivity"
-            android:exported="true" >
+            android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Menu.MenubarActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Toast.FancyAndCustomToast"
             android:exported="true" />
