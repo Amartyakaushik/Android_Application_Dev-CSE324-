@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00695C"
+    tools:context=".PracticeQuestion">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/call_btn"
+        android:textSize="19sp"
+        android:textStyle="italic"/>
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="360dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/call_btn"
+        android:textSize="19sp"
+        android:textStyle="italic"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_dialer"
+        android:layout_marginBottom="200dp"
+        android:layout_marginHorizontal="90dp"
+        android:textColor="@color/black"
+        android:id="@+id/call_btn"
+        app:cornerRadius="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
