@@ -23,19 +23,21 @@
         android:theme="@style/MyCheckBox"
         tools:targetApi="31">
         <activity
-            android:name=".calling"
-            android:exported="true" >
+            android:name=".GridLayoutScrollView"
+            android:exported="true">
 
-
-        </activity>
-        <activity
-            android:name=".PracticeQuestion"
-            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".calling"
+            android:exported="true"></activity>
+        <activity
+            android:name=".PracticeQuestion"
+            android:exported="true">
         </activity>
         <activity
             android:name=".IntentExample"
@@ -78,8 +80,7 @@
             android:exported="true" />
         <activity
             android:name=".Menu.MenuActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".Menu.MenubarActivity"
             android:exported="true" />
