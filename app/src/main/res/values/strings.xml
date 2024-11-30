@@ -54,4 +54,5 @@
     <string name="customMessage">This is sample custom message</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample">Hello how are you</string>
 </resources>

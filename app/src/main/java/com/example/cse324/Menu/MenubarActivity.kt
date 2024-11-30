@@ -24,6 +24,8 @@ class MenubarActivity : AppCompatActivity() {
 
         // providing subtitle for the ActionBar
         actionBar.subtitle = "   Design a custom Action Bar"
+//        val color = ColorDra
+
 //        actionBar.setBackgroundDrawable(@drawable)
 
         // adding icon in the ActionBar
@@ -60,7 +62,6 @@ class MenubarActivity : AppCompatActivity() {
                     R.id.mail -> Toast.makeText(this,"Mail clicked",Toast.LENGTH_LONG).show()
                     R.id.upload -> Toast.makeText(this,"Upload clicked",Toast.LENGTH_LONG).show()
                     R.id.sharshare -> Toast.makeText(this,"Search clicked",Toast.LENGTH_LONG).show()
-
                 }
                     return super.onOptionsItemSelected(item)
 

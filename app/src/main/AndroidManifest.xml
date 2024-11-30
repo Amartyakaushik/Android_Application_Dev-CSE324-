@@ -23,22 +23,35 @@
         android:theme="@style/MyCheckBox"
         tools:targetApi="31">
         <activity
-            android:name=".GridLayoutScrollView"
+            android:name=".EndTerm"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".calling"
-            android:exported="true"></activity>
+            android:name=".ETPpractice.LanguageLocalization"
+            android:exported="false" />
         <activity
-            android:name=".PracticeQuestion"
+            android:name=".ETPpractice.ListView"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".ETPpractice.RadioBtn"
+            android:exported="false" />
+        <activity
+            android:name=".ETPpractice.GridLayoutScrollView"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".calling"
+            android:exported="true" />
+        <activity
+            android:name=".PracticeQuestion"
+            android:exported="true" />
         <activity
             android:name=".IntentExample"
             android:exported="false" />
@@ -80,7 +93,7 @@
             android:exported="true" />
         <activity
             android:name=".Menu.MenuActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Menu.MenubarActivity"
             android:exported="true" />
