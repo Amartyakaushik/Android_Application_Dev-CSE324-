@@ -1,6 +1,10 @@
 package com.example.cse324.Notification
 
 import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.PendingIntent.FLAG_UPDATE_CURRENT
+import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.app.NotificationCompat
@@ -19,8 +23,20 @@ class NotificationActiivity : AppCompatActivity() {
             val notification = NotificationCompat.Builder(this,App().CHANNEL_ID1)
             notification.setContentTitle(binding.title.text.toString())
             notification.setContentText(binding.content.text.toString())
+            // for creating actionable notification
+            val intent = Intent(this, NotificationActiivity::class.java)
+            val pendingIntent = PendingIntent.getActivity(this,0,intent,
+                PendingIntent.FLAG_IMMUTABLE)
             notification.setSmallIcon(R.drawable.ic_call)
             notification.setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_CALL)
+                .setColor(Color.MAGENTA)
+                .setContentIntent(pendingIntent)
+                .addAction(R.drawable.call_cut_ic,"cut",pendingIntent)
+                .addAction(androidx.core.R.drawable.ic_call_answer,"pick",null)
+                .addAction(R.drawable.ic_vibration,"silent",null)
+                .setOnlyAlertOnce(true)
+                .setAutoCancel(true)
                 .build()
 
             val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
