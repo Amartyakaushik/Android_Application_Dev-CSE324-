@@ -12,8 +12,12 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
 
+<!--    for granting the applicatio to post notification -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+<!--    and using name attribute in the application -->
     <application
         android:allowBackup="true"
+        android:name=".Notification.App"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -23,29 +27,31 @@
         android:theme="@style/MyCheckBox"
         tools:targetApi="31">
         <activity
-            android:name=".EndTerm"
-            android:exported="true">
+            android:name=".Notification.NotificationActiivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".EndTerm"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".ETPpractice.LanguageLocalization"
             android:exported="false" />
         <activity
             android:name=".ETPpractice.ListView"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ETPpractice.RadioBtn"
             android:exported="false" />
         <activity
             android:name=".ETPpractice.GridLayoutScrollView"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".calling"
             android:exported="true" />
