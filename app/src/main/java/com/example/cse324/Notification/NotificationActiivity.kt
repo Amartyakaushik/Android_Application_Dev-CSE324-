@@ -24,10 +24,14 @@ class NotificationActiivity : AppCompatActivity() {
             notification.setContentTitle(binding.title.text.toString())
             notification.setContentText(binding.content.text.toString())
             // for creating actionable notification
-            val intent = Intent(this, NotificationDataActivity::class.java)
+//            val intent = Intent(this, NotificationDataActivity::class.java)
+            // for broadcasting the notification
+            val intent = Intent(this, BroadCast::class.java)
             intent.putExtra("Next data",binding.content.text.toString())
-            val pendingIntent = PendingIntent.getActivity(this,0,intent,
-                PendingIntent.FLAG_MUTABLE)
+//            val pendingIntent = PendingIntent.getActivity(this,0,intent, PendingIntent.FLAG_MUTABLE)
+            //for broadcasting the notification
+            val pendingIntent = PendingIntent.getBroadcast(this,0,intent, PendingIntent.FLAG_MUTABLE)
+//            val pendingIntent = PendingIntent.getActivity(this,0,intent, PendingIntent.FLAG_MUTABLE)
             notification.setSmallIcon(R.drawable.ic_call)
             notification.setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_CALL)

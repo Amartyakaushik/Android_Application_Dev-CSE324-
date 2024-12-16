@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/MyCheckBox"
         tools:targetApi="31">
+        <receiver android:name=".Notification.BroadCast"/>
         <activity
             android:name=".Notification.NotificationDataActivity"
             android:exported="false" />
