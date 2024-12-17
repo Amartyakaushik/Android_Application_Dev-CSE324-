@@ -24,7 +24,12 @@
         android:supportsRtl="true"
         android:theme="@style/MyCheckBox"
         tools:targetApi="31">
-        <receiver android:name=".Notification.BroadCast"/>
+        <service
+            android:name=".Notification.MyIntentService"
+            android:exported="false"></service>
+
+        <receiver android:name=".Notification.BroadCast" />
+
         <activity
             android:name=".Notification.NotificationDataActivity"
             android:exported="false" />
@@ -39,7 +44,7 @@
         </activity>
         <activity
             android:name=".EndTerm"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ETPpractice.LanguageLocalization"
             android:exported="false" />

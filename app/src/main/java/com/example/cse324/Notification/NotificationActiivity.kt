@@ -26,12 +26,15 @@ class NotificationActiivity : AppCompatActivity() {
             // for creating actionable notification
 //            val intent = Intent(this, NotificationDataActivity::class.java)
             // for broadcasting the notification
-            val intent = Intent(this, BroadCast::class.java)
+//            val intent = Intent(this, BroadCast::class.java)
+//            for intent service sharing
+            val intent = Intent(this, MyIntentService::class.java)
             intent.putExtra("Next data",binding.content.text.toString())
 //            val pendingIntent = PendingIntent.getActivity(this,0,intent, PendingIntent.FLAG_MUTABLE)
             //for broadcasting the notification
-            val pendingIntent = PendingIntent.getBroadcast(this,0,intent, PendingIntent.FLAG_MUTABLE)
-//            val pendingIntent = PendingIntent.getActivity(this,0,intent, PendingIntent.FLAG_MUTABLE)
+//            val pendingIntent = PendingIntent.getBroadcast(this,0,intent, PendingIntent.FLAG_MUTABLE)
+//             for Intent service sharing
+            val pendingIntent = PendingIntent.getService(this,0,intent, PendingIntent.FLAG_MUTABLE)
             notification.setSmallIcon(R.drawable.ic_call)
             notification.setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setCategory(NotificationCompat.CATEGORY_CALL)
