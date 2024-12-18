@@ -24,9 +24,23 @@
         android:supportsRtl="true"
         android:theme="@style/MyCheckBox"
         tools:targetApi="31">
+        <activity
+            android:name=".Authentication.FirebaseSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.FirebaseLogin"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <service
             android:name=".Notification.MyIntentService"
-            android:exported="false"></service>
+            android:exported="false" />
 
         <receiver android:name=".Notification.BroadCast" />
 
@@ -36,11 +50,6 @@
         <activity
             android:name=".Notification.NotificationActiivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".EndTerm"
