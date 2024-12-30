@@ -8,7 +8,8 @@
 
 <!--    <style name="Theme.CSE324" parent="Base.Theme.CSE324" />-->
 
-<!--    <style name="Theme.CSE324" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="Material.Theme.CSE324" parent="Base.Theme.CSE324"/>
+<!--    <style name="Theme.CSE324" parent="Theme.AppCompat.Light.DarkActionBar"/>-->
     <style name="MyCheckBox" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorControlNormal">#fff</item>   <!-- normal border color change as you wish -->
         <item name="colorControlActivated">#fff</item> <!-- activated color change as you wish -->

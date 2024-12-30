@@ -22,15 +22,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/MyCheckBox"
+        android:theme="@style/Material.Theme.CSE324"
         tools:targetApi="31">
+<!--        android:theme="@style/MyCheckBox"-->
+        <activity
+            android:name=".SharedPreference.LoginCredentialsSharedPreference"
+            android:exported="false" />
         <activity
             android:name=".Authentication.FirebaseSignUp"
             android:exported="false" />
         <activity
             android:name=".Authentication.FirebaseLogin"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,8 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".Notification.NotificationActiivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".EndTerm"
             android:exported="true" />
