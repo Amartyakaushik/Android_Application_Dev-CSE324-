@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".SharedPreference.ActivityLevelPreference">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:hint="enter Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

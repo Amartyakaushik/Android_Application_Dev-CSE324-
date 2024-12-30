@@ -1,5 +1,6 @@
 package com.example.cse324.SharedPreference
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.cse324.R
@@ -23,6 +24,10 @@ class LoginCredentialsSharedPreference : AppCompatActivity() {
             editor.putString("email", binding.email.text.toString())
             editor.putString("pass",binding.pass.text.toString())
             editor.apply()
+        }
+
+        binding.settings.setOnClickListener {
+            startActivity(Intent(this, ActivityLevelPreference::class.java))
         }
     }
 }

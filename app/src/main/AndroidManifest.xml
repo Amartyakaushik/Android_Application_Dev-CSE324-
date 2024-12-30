@@ -24,23 +24,25 @@
         android:supportsRtl="true"
         android:theme="@style/Material.Theme.CSE324"
         tools:targetApi="31">
-<!--        android:theme="@style/MyCheckBox"-->
+        <activity
+            android:name=".SharedPreference.ActivityLevelPreference"
+            android:exported="false" />
+        <!-- android:theme="@style/MyCheckBox" -->
         <activity
             android:name=".SharedPreference.LoginCredentialsSharedPreference"
-            android:exported="true" >
-                <intent-filter>
-                        <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                        <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Authentication.FirebaseSignUp"
             android:exported="false" />
         <activity
             android:name=".Authentication.FirebaseLogin"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
 
         <service
             android:name=".Notification.MyIntentService"
@@ -53,7 +55,7 @@
             android:exported="false" />
         <activity
             android:name=".Notification.NotificationActiivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".EndTerm"
             android:exported="true" />
