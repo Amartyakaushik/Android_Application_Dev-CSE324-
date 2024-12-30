@@ -12,6 +12,11 @@ class LoginCredentialsSharedPreference : AppCompatActivity() {
         binding = ActivityLoginCredentialsSharedPreferenceBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // now to access the data every time the user opens the application.
+        val editor = getSharedPreferences("AUTH_DETAILS",  MODE_PRIVATE)
+        binding.email.setText(editor.getString("email", null))
+        binding.pass.setText(editor.getString("pass", null))
+
         val loginBtn = binding.loginBtn
         loginBtn.setOnClickListener {
             val editor = getSharedPreferences("AUTH_DETAILS",  MODE_PRIVATE).edit()
