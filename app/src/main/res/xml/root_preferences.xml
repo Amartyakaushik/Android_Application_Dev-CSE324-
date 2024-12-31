@@ -32,17 +32,15 @@
             app:title="@string/attachment_title" />
 
     </PreferenceCategory>
-    <PreferenceCategory
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:title="MY category">
+    <PreferenceCategory android:title="MY category">
 
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
-            android:title="Check box preference"
-            android:summary="Default CheckBox"/>
+            android:key="Change_ui"
+            android:title="Change UI"
+            android:summary="Dark Mode"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
