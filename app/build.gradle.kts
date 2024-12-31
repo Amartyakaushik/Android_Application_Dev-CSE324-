@@ -63,4 +63,6 @@ dependencies {
 
     // custom toast
     implementation ("com.github.emreesen27:Android-Custom-Toast-Message:1.0.5")
+    //gson
+    implementation ("com.google.code.gson:gson:2.11.0")
 }

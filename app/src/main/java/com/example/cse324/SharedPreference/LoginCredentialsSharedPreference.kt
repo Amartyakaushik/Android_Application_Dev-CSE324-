@@ -57,5 +57,9 @@ class LoginCredentialsSharedPreference : AppCompatActivity() {
 //            startActivity(Intent(this, ActivityLevelPreference::class.java))
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+        binding.nonPrimBtn.setOnClickListener {
+            startActivity(Intent(this,NonPrimitiveData::class.java))
+//            finish()
+        }
     }
 }

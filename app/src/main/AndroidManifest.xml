@@ -25,6 +25,9 @@
         android:theme="@style/Material.Theme.CSE324"
         tools:targetApi="31">
         <activity
+            android:name=".SharedPreference.NonPrimitiveData"
+            android:exported="false" />
+        <activity
             android:name=".SharedPreference.SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />
