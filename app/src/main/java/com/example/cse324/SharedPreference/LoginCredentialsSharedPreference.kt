@@ -27,7 +27,8 @@ class LoginCredentialsSharedPreference : AppCompatActivity() {
         }
 
         binding.settings.setOnClickListener {
-            startActivity(Intent(this, ActivityLevelPreference::class.java))
+//            startActivity(Intent(this, ActivityLevelPreference::class.java))
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
     }
 }
