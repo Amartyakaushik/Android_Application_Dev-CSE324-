@@ -24,7 +24,9 @@ class LoginCredentialsSharedPreference : AppCompatActivity() {
                 if(manager.getBoolean("Change_ui",false) == true){
                     binding.sharePreferenceActivityLayout.setBackgroundColor(Color.BLACK)
                     binding.email.setTextColor(Color.WHITE)
+                    binding.email.setBackgroundColor(Color.GRAY)
                     binding.pass.setTextColor(Color.WHITE)
+                    binding.pass.setBackgroundColor(Color.GRAY)
                     binding.loginBtn.setBackgroundColor(Color.DKGRAY)
                     binding.loginBtn.setTextColor(Color.WHITE)
                 }else{
@@ -32,7 +34,7 @@ class LoginCredentialsSharedPreference : AppCompatActivity() {
                     binding.email.setTextColor(Color.BLACK)
                     binding.pass.setTextColor(Color.BLACK)
                     binding.loginBtn.setBackgroundColor(Color.BLACK)
-                    binding.loginBtn.setTextColor(Color.BLACK)
+                    binding.loginBtn.setTextColor(Color.WHITE)
                 }
             }
         }
