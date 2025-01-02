@@ -14,6 +14,7 @@ class NonPrimitiveData : AppCompatActivity() {
         binding = ActivityNonPrimitiveDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //this is the implementation of non primitive type data
         val editor = getSharedPreferences("USER_DATA", MODE_PRIVATE)
         val user = Gson().fromJson(editor.getString("AUTH_DATA",null), UserDataSharedPreferences::class.java)
         binding.email.setText(user.email)
