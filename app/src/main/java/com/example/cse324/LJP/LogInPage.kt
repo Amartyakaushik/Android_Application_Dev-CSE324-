@@ -19,6 +19,8 @@ class LogInPage : AppCompatActivity() {
         var loginBtn = binding.loginBtn
         loginBtn.setOnClickListener{
             startActivity(Intent(this,SplashScreen::class.java))
+            startActivity(Intent(this,SplashScreen::class.java))
+            Toast.makeText(this, "NOthing else", Toast.LENGTH_SHORT).show()
 
         }
     }
