@@ -45,4 +45,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Pathankot"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
     }
+//    override fun onMapReady(googleMap: GoogleMap) {
+//        mMap = googleMap
+//
+//        val sydney = LatLng(32.27373890738688, 75.66488129694784)
+//        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Pathankot"))
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+//    }
 }
