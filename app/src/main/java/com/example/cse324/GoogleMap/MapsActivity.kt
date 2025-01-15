@@ -1,7 +1,10 @@
 package com.example.cse324.GoogleMap
 
+import android.Manifest
+import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.app.ActivityCompat
 import com.example.cse324.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -16,6 +19,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
+    private val LOCATION_PERMISSION_REQUEST_CODE = 1000
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,11 +44,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      * installed Google Play services and returned to the app.
      */
     override fun onMapReady(googleMap: GoogleMap) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
+        } else {
+            mMap.isMyLocationEnabled = true
+        }
+
         mMap = googleMap
 
-        val sydney = LatLng(32.27373890738688, 75.66488129694784)
-        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Pathankot"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val pathankot = LatLng(32.27373890738688, 75.66488129694784)
+        mMap.addMarker(MarkerOptions().position(pathankot).title("Marker in Pathankot"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(pathankot))
     }
 //    override fun onMapReady(googleMap: GoogleMap) {
 //        mMap = googleMap
